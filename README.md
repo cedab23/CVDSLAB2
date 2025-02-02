@@ -78,13 +78,58 @@ Al ultilizar el commando "**mvn package**" nos demostro la siguiente pantalla, p
 
 ![compilacion](images/CompilacionMaven.png)
 
+asimismo, la version extendida de dicho comando sin modificar el pom.xml seria el siguiente:
+
+![compilacionFull](images/mvn-exec-complete.png)
+
+
 Esto nos brindo el "Hello World!" por defecto presente en el archivo, el cual modificamos para que acepte un argumento de entrada, en este caso el nombre del usuario.
 
 ![primeraEjecucion](images/CompilacionArgumento.png)
+![primeraEjecucionJuan](images/personalizatedMessage1.png)
 
 Luego la problematica que surgio es que al separar con un espacio el nombre y apellido, este contaba como argumentos distintos y no uno solo, para arreglar se hace el uso de comilllas simples (  **' '**  ) para tomarlo como un solo argumento incluyendo sus espacios, dandonos el siguiente resultado:
 
 ![segundaEjecucion](images/mavenCompleto.png)
+![segundaEjecucionJuan](images/personalizatedMessage2.png)
+
+En caso de no añadir las comillas simples, no tomaria el apellido como parte del mismo argumento y solo saludaria con el nombre como en la siguiente situación:
+
+![problemaSaludo](images/personalizatedMessageNoCompose.png)
+
+### Hacer esqueleto de la aplicación
+
+Las carpetas añadidas realizaron el siguiente cambio en el arbol del proyecto:
+
+![TreeComplete](images/TreeShapes.png)
+
+una vez realizados los *.java* solicitados, se procedio a ejecutrar los comandos solicitados, dandonos los siguientes resultados:
+
+#### Sin parametro
+
+![NoParameter](images/NoParameter.png)
+
+Esta se ejecuta correctamente, puesto que en el codigo suministrado hay un manejo del caso de un parametro vacio, siendo este el mensaje de error de necesitar dicho parametro.
+
+#### Parametro: qwerty
+
+![qwerty](images/QwertyParameter.png)
+
+Esta se ejecuta correctamente, puesto que en el codigo suministrado hay un manejo del caso de un parametro incorrecto, siendo este el mensaje de error de que "qwerty" no es uno de los tipos validos como parametro.
+
+#### Parametro: Pentagon
+
+![Pentagon](images/PentagonParameter.png)
+
+Esta se ejecuta correctamente, generando un objeto tipo pentágono asociado a su cantidad de lados, el cual se muestra en el mensaje donde menciona su correcta creacion con 5 lados. 
+
+#### Parametro: Hexagon
+
+![Hexagon](images/HexagonParameter.png)
+
+Esta se ejecuta correctamente, generando un objeto tipo hexágono asociado a su cantidad de lados, el cual se muestra en el mensaje donde menciona su correcta creacion con 6 lados. 
+
+Para lograr la correcta ejecución de este codigo, se utilizo el patron de diseño de "simple factory" al tener en cuenta que no tendria una alta escalabilidad como proyecto y asimismo al tratarse de una practica de patrones de diseño asumimos que era mas factible realizarlo con la metodologia de la "simple factory".
 
 
 
