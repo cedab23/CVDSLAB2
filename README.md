@@ -46,21 +46,37 @@ Para generar un proyecto en maven basado en arquetipos se debe tener en cuenta q
 - ArtefactId
 - Package
 
-dando como resultado el siguiente comando:
+Dando como resultado el siguiente comando:
 
-![cmd](images/[FALTA])
+![cmd](images/creationProjectCommand.png)
 
-y por consecuente, se presento el siguiente resultado indicando que fue añadido satisfactoriamente:
+Y por consecuente, se presento el siguiente resultado indicando que fue añadido satisfactoriamente:
 
-![proyectoMaven](images/[FALTA])
+![proyectoMaven](images/folders.png)
 
 El cual posee la siguiente estructura de arbol:
 
-![arbol](images/[FALTA])
+![arbol](images/treeFiles.png)
+![arbol](images/treeFolders.png
+) 
 
 ### Ajustar algunas configuraciones en el proyecto
 
-![cambioPom](images/[FALTA])
+Se añadieron las configuraciones mencionadas en la ultima seccion de properties.
+
+#### Antes
+
+![Pom](images/PomOriginal.png)
+
+#### Despues
+
+![cambioPom](images/PomChange.png)
 
 ### Compilar y ejecutar
+
+Al ultilizar el commando "**mvn package**" nos demostro la siguiente pantalla, por lo cual no fue necesario hacer uso del "**-U**" al tener las dependencias actualizadas.
+
+![compilacion](images/CompilacionMaven.png)
+
+Asimismo, a la hora de probar la compilacion se aprove
 
