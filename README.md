@@ -74,9 +74,17 @@ Se añadieron las configuraciones mencionadas en la ultima seccion de properties
 
 ### Compilar y ejecutar
 
-Al ultilizar el commando "**mvn package**" nos demostro la siguiente pantalla, por lo cual no fue necesario hacer uso del "**-U**" al tener las dependencias actualizadas.
+Al ultilizar el commando "**mvn package**" nos demostro la siguiente pantalla, por lo cual no fue necesario hacer uso del "**-U**" al tener las dependencias actualizadas. Posteriormente se ejecuto el archivo "**App.java**" bajo el siguiente comando:
 
 ![compilacion](images/CompilacionMaven.png)
 
-Asimismo, a la hora de probar la compilacion se aprove
+Esto nos brindo el "Hello World!" por defecto presente en el archivo, el cual modificamos para que acepte un argumento de entrada, en este caso el nombre del usuario.
+
+![primeraEjecucion](images/CompilacionArgumento.png)
+
+Luego la problematica que surgio es que al separar con un espacio el nombre y apellido, este contaba como argumentos distintos y no uno solo, para arreglar se hace el uso de comilllas simples (  **' '**  ) para tomarlo como un solo argumento incluyendo sus espacios, dandonos el siguiente resultado:
+
+![segundaEjecucion](images/mavenCompleto.png)
+
+
 
