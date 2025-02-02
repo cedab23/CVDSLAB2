@@ -1,8 +1,10 @@
 package edu.eci.cvds.patterns.archetype;
 
+
 /**
  * Hello world!
  */
+
 public class App {
     public static void main(String[] args) {
         if (args.length > 0 ){
